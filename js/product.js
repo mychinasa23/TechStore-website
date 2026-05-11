@@ -388,7 +388,5 @@ function setupAddToCart(product) {
 
         addToCart(product.id, quantity);
         setInCartState();
-
-        setTimeout(() => resetCartState(), 2500);
     });
 }
