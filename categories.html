@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - TechStore</title>
+    <link rel="stylesheet" href="css/categories.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header class="header">  
+        <div class="header__content">
+            <a href="index.html" class="header__logo-link">
+                <div class="header__logo-box">
+                    <span class="header__logo-letter">T</span>
+                </div>
+                <span class="header__logo-text">TechStore</span>
+            </a>
+
+            <!-- Десктопная навигация -->
+            <nav class="header__nav">
+                <a href="index.html" class="header__nav-link">Products</a>
+                <a href="categories.html" class="header__nav-link">Categories</a>
+                <a href="deals.html" class="header__nav-link">Deals</a>
+                <a href="about.html" class="header__nav-link">About</a>
+            </nav>
+
+            <div class="header__actions">
+                <a class="header__action-link">
+                    <svg width="20" height="20" viewBox="0 0 20 20" stroke="#364153" stroke-width="1.67" fill="none">
+                        <circle cx="9.16" cy="9.16" r="6.665"/>
+                        <line x1="13.92" y1="13.92" x2="18.5" y2="18.5"/>
+                    </svg>
+                </a>
+                    
+                <a href="card.html" class="header__action-button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" stroke="#364153" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                        <path d="M1.71 1.71H4.21L6.71 12.54H15.88L18.38 4.21H5.04"/>
+                        <circle cx="6.67" cy="17.5" r="0.835"/>
+                        <circle cx="15.83" cy="17.5" r="0.835"/>
+                    </svg>
+                    <div id="cartBadge" class="cart-badge" style="display: none;"></div>
+                </a>
+
+                <button class="header__burger" id="burgerBtn" aria-label="Меню">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#364153" stroke-width="1.67" stroke-linecap="round">
+                        <line x1="3.33" y1="5" x2="16.67" y2="5"/>
+                        <line x1="3.33" y1="10" x2="16.67" y2="10"/>
+                        <line x1="3.33" y1="15" x2="16.67" y2="15"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="header__mobile-menu" id="mobileMenu">
+            <div class="header__mobile-menu-container">
+                <nav class="header__mobile-nav">
+                    <a href="index.html" class="header__mobile-nav-link">Products</a>
+                    <a href="categories.html" class="header__mobile-nav-link">Categories</a>
+                    <a href="deals.html" class="header__mobile-nav-link">Deals</a>
+                    <a href="about.html" class="header__mobile-nav-link">About</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="categories__container">
+        <div class="categories__info">
+            <div class="categories__title">Product Categories</div>
+            <div class="categories__subtitle">Browse our wide selection of premium electronics by category</div>
+        </div>
+
+        <div class="categories-grid">
+            <a href="index.html?category=audio" class="category-card">
+            <img src="images/wireless.jpeg" alt="Audio">
+            <div class="category-overlay">
+                <span class="category-name">Audio</span>
+                <span class="category-count">4 products</span>
+            </div>
+            </a>
+
+            <a href="index.html?category=computers" class="category-card">
+            <img src="images/laptop.jpeg" alt="Computers">
+            <div class="category-overlay">
+                <span class="category-name">Computers</span>
+                <span class="category-count">2 products</span>
+            </div>
+            </a>
+
+            <a href="index.html?category=wearables" class="category-card">
+            <img src="images/watch.jpeg" alt="Wearables">
+            <div class="category-overlay">
+                <span class="category-name">Wearables</span>
+                <span class="category-count">2 product</span>
+            </div>
+            </a>
+
+            <a href="index.html?category=photography" class="category-card">
+            <img src="images/camera.jpeg" alt="Photography">
+            <div class="category-overlay">
+                <span class="category-name">Photography</span>
+                <span class="category-count">2 product</span>
+            </div>
+            </a>
+
+            <a href="index.html?category=tablets" class="category-card">
+            <img src="images/tablet.jpeg" alt="Tablets">
+            <div class="category-overlay">
+                <span class="category-name">Tablets</span>
+                <span class="category-count">1 products</span>
+            </div>
+            </a>
+        </div>
+    </main>        
+
+    <footer class="footer">
+        <div class="footer__top">
+
+            <!-- ВЕРХНЯЯ ЧАСТЬ ФУТЕРА (КОЛОНКИ) -->
+            <div class="footer__grid">
+                    <!-- КОЛОНКА 1 (СОЦ СЕТИ, БРЕНД) -->
+                    <div class="footer__column__brand">
+
+                        <div class="footer__logo-wrapper">
+                            <div class="footer__logo-box">
+                                <span class="footer__logo-letter">T</span>
+                            </div>
+                            <h3 class="footer__logo-text">TechStore</h3>
+                        </div>
+
+                        <p class="footer__description">
+                            Your trusted destination for premium electronics and tech accessories. Quality products, competitive prices, exceptional service.
+                        </p>
+
+                        
+                        <!-- СОЦ СЕТИ -->
+                        <div class="footer__social">
+
+                            <!-- FACEBOOK -->
+                            <a href="#" class="footer__social-link" aria-label="Facebook">
+                                <svg class="footer__social-icon" width="16" height="16" viewBox="0 0 16 16" stroke="#364153" stroke-width="1.33" stroke-linejoin="round" stroke-linecap="round" fill="none">
+                                    <path 
+                                        d="M7.5 3.5v2.5h-2v2h2v5h2v-5h1.5l0.5-2h-2v-1.5c0-0.276 0.224-0.5 0.5-0.5h1.5v-2h-1.5c-1.5 0-2.5 1-2.5 2.5z"/>
+                                </svg>
+                            </a>
+
+                            <!-- TWITTER -->
+                            <a href="#" class="footer__social-link" aria-label="Twitter">
+                                <svg class="footer__social-icon" width="16" height="16" viewBox="0 0 16 16" stroke="#364153" stroke-width="1.33" stroke-linejoin="round" stroke-linecap="round" fill="none">
+                                <path 
+                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                </svg>
+                            </a>
+
+                            <!-- INSTAGRAM -->
+                            <a href="#" class="footer__social-link" aria-label="Instagram">
+                                <svg class="footer__social-icon" widht="16" height="16" viewBox="0 0 16 16" stroke="#364153" stroke-width="1.33" fill="none">
+                                    <rect x="1.5" y="1.5" width="13" height="13" rx="3.5"/>
+                                    <circle cx="8" cy="8" r="2.5"/>
+                                    <circle cx="11.5" cy="4.5" r="0.1"/>
+                                </svg>
+                            </a>
+
+                            <!-- YOUTUBE -->
+                            <a href="#" class="footer__social-link" aria-label="YouTube">
+                                <svg class="footer__social-icon" width="16" height="16" viewBox="0 0 16 16" stroke="#364153" stroke-width="1.33" stroke-linejoin="round" fill="none">
+                                    <rect x="0.5" y="2.5" width="15" height="11" rx="2"/>
+                                    <path d="M6 5.5 L10.5 8 L6 10.5 L6 5.5"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- КОЛОНКА 2 Quick Links -->
+                    <div class="footer__column-quick">
+                        <h3 class="footer__quick-links">Quick Links</h3>
+                        <nav class="footer__quick-nav">
+                            <a href="#" class="footer__quick-nav-link">Shop All Products</a>
+                            <a href="#" class="footer__quick-nav-link">Special Deals</a>
+                            <a href="#" class="footer__quick-nav-link">About Us</a>
+                            <a href="#" class="footer__quick-nav-link">Contact Support</a>
+                        </nav>
+                    </div>
+
+                    <!-- КОЛОНКА 3 Customer Service -->
+                    <div class="footer__column-customer">
+                        <h3 class="footer__customer-service">Customer Service</h3>
+                        <nav class="footer__customer-nav">
+                            <a href="#" class="footer__customer-nav-link">Shipping Information</a>
+                            <a href="#" class="footer__customer-nav-link">Returns & Exchanges</a>
+                            <a href="#" class="footer__customer-nav-link">FAQ</a>
+                            <a href="#" class="footer__customer-nav-link">Track Order</a>
+                        </nav>
+                        <nav class="footer__customer-nav-link-paragraph">
+                            <p class="footer__customer-support">Customer Support:</p>
+                            <p class="footer__customer-shop">1-800-TECH-SHOP</p>
+                            <p class="footer__customer-email">support@techstore.com</p>
+                        </nav>
+                    </div>
+
+                    <!-- КОЛОНКА 4 (SUBSCRIBE) -->
+                    <div class="footer__column-newsletter">
+                        <h3 class="footer__newsletter">Newsletter</h3>
+                        <p class="footer__newsletter-paragraph">Subscribe to get special offers, free giveaways, and updates.</p>
+
+                        <div class="footer__form">
+                            <input 
+                                type="email"
+                                class="footer__form-input"
+                                placeholder="Enter your email"
+                                required    
+                            >
+                            <button type="submit" class="footer__form-button">Subscribe</button>
+                        </div>
+
+                    </div>
+            </div>
+
+            <!-- НИЖНЯЯ ЧАСТЬ ФУТЕРА (копирайт, юридическая информ.) -->
+            <div class="footer__down">
+                <p class="footer__down-copyright">© 2026 TechStore. All rights reserved.</p>
+                <nav class="footer__down-copyright-nav">
+                    <a href="#" class="footer__down-copyright-link">Privacy Policy</a>
+                    <a href="#" class="footer__down-copyright-link">Terms of Service</a>
+                    <a href="#" class="footer__down-copyright-link">Cookie Policy</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/header.js"></script>
+</body>
+</html>

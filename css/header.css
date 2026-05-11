@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 2px -1px rgba(0, 0, 0, 0.1),
+                0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* ================= CONTENT ================= */
+
+.header__content {
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 32px;
+    height: 65px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ================= LOGO ================= */
+
+.header__logo-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.header__logo-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #155dfc, #9810fa);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__logo-letter {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+}
+
+.header__logo-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #0a0a0a;
+}
+
+/* ================= NAV ================= */
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.header__nav-link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #364153;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    white-space: nowrap;
+}
+
+.header__nav-link:hover {
+    color: #155dfc;
+}
+
+/* ================= ACTIONS ================= */
+
+.header__actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+}
+
+.header__action-link,
+.header__action-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #364153;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.2s ease;
+    text-decoration: none;
+}
+
+.header__action-link:hover,
+.header__action-button:hover {
+    background-color: rgba(54, 65, 83, 0.1);
+}
+
+/* ================= CART BADGE ================= */
+
+.cart-badge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 18px;
+    height: 18px;
+    border-radius: 999px;
+    background-color: #155dfc;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ================= BURGER ================= */
+
+.header__burger {
+    display: none;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.header__mobile-menu {
+    position: fixed;
+    top: 66px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.header__mobile-menu.open {
+    display: block;
+}
+
+.header__mobile-menu-container {
+    padding: 20px 16px;
+}
+
+.header__mobile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.header__mobile-nav-link {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: #0a0a0a;
+    text-decoration: none;
+}
+
+/* ≤ 768px */
+@media (max-width: 739px) {
+    .header__nav {
+        display: none;
+    }
+
+    .header__burger {
+        display: flex;
+    }
+
+    .header__logo-text {
+        display: none;
+    }
+
+    .header__content {
+        padding: 0 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header__content {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+

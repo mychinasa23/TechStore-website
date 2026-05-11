@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9fafb;
+}
+
+.about-main {
+    max-width: 1280px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 65px 32px 32px 32px;
+    background-color: #f9fafb;
+}
+
+.about__title-subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    gap: 16px;
+}
+
+.about__title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #0a0a0a;
+    display: flex;
+    text-align: center;
+}
+
+.about__subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4a5565;
+    text-align: center;
+}
+
+.about__our-story {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    padding: 24px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background-color: #fff;
+    gap: 12px;
+}
+
+.about__our-story h {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0a0a0a;
+}
+
+.our__story-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #4a5565;
+    line-height: 20px;
+}
+
+.our-values {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #0a0a0a;
+    display: flex;
+    justify-content: center;
+    padding-top: 36px;
+    padding-bottom: 16px;
+}
+
+.our-values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* было flex — исправлено на grid */
+    gap: 24px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.value-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+.value-icon {
+    font-size: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: rgba(21, 93, 252, 0.1);
+    border-radius: 50%;
+}
+
+.value-name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #0a0a0a;
+}
+
+.value-desc {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #4a5565;
+    line-height: 20px;
+}
+
+.get-in-touch {
+    margin-top: 32px;
+    padding: 24px;
+    background-color: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.get-in-touch h {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #0a0a0a;
+}
+
+.contacts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 12px;
+    background: #fff;
+    padding-top: 18px;
+}
+
+.contact-icon {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(21, 93, 252, 0.1);
+    border-radius: 50%;
+}
+
+.contact-icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #0a0a0a;
+    margin-bottom: 6px;
+}
+
+.contact-info p {
+    margin: 4px 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: #4a5565;
+    line-height: 20px;
+}
+
+
+@media (max-width: 1024px) {
+    .our-values-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+}
+
+/* Мобилка (до 639px) */
+@media (max-width: 639px) {
+    .our-values-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .contacts-grid {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+}
